@@ -5,7 +5,7 @@ document.addEventListener("visibilitychange", () => {
     if(!running){
         running = true
         if(animationRequest !== undefined)window.cancelAnimationFrame(animationRequest);
-        animationRequest = window.requestAnimationFrame(gameLoop)
+        gameLoop()
     }
     else{
         running = false
