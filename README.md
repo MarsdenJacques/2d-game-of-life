@@ -1,0 +1,1 @@
+https://marsdenjacques.github.io/2d-game-of-life/
