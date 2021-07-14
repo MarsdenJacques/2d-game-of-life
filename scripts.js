@@ -1,13 +1,14 @@
 window.onload = init;
 
 document.addEventListener("visibilitychange", () => {
-    console.log('test')
     if(!running){
+        console.log('test1' + running)
         running = true
         if(animationRequest !== undefined)window.cancelAnimationFrame(animationRequest);
-        gameLoop()
+        animationRequest = window.requestAnimationFrame(gameLoop)
     }
     else{
+        console.log('test2' + running)
         running = false
         if(animationRequest !== undefined)window.cancelAnimationFrame(animationRequest);
     }})
